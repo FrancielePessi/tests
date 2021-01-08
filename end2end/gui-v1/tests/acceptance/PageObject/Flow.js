@@ -268,12 +268,21 @@ module.exports = {
     },
 
     addGeofence(){
+        // I.click('#palette-collapse-all');
+        // //I.click(locate()'palette-content')
+        // I.click('#palette-location')
+        // //I.click('#palette-base-category-location')
+        // I.dragSlider('#palette_node_geofence', 500)
+        // //I.retry(5).click('#palette-header-location');    
+
         I.click('#palette-collapse-all');
+        //pause();
         //I.click(locate()'palette-content')
-        I.click('#palette-location')
+        // I.click('#palette-location')
+        I.click('#palette-container-location')
         //I.click('#palette-base-category-location')
+        // I.retry(5).click('#palette-header-location');
         I.dragSlider('#palette_node_geofence', 500)
-        //I.retry(5).click('#palette-header-location');    
     },
 
     addGetContext(){
