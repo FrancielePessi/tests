@@ -167,32 +167,32 @@ Scenario('@flow: 4° FLOW', async(Flow, I) => {
     Flow.clickOnSave()
 })
 
-// Scenario('@flow: 5° FLOW', async(Flow, I) => {    
-//    Flow.clickOpen()
-//    Flow.clickCreateNew()
-//    Flow.setFlowName('5_FluxoSanity')
-//    Flow.clickOnSave()
-//    Flow.seeFlowHasCreated()
-//    Flow.clickOpen()
-//    Flow.clickFlowCreated('5_FluxoSanity')
+Scenario('@flow: 5° FLOW', async(Flow, I) => {    
+   Flow.clickOpen()
+   Flow.clickCreateNew()
+   Flow.setFlowName('5_FluxoSanity')
+   Flow.clickOnSave()
+   Flow.seeFlowHasCreated()
+   Flow.clickOpen()
+   Flow.clickFlowCreated('5_FluxoSanity')
     
-//     // Add caixas
-//    Flow.addNodeEventDeviceIn();
-//    Flow.addGeofence();
-//    Flow.addGetContext();
-//    Flow.addDeviceOutput();
-//    I.wait(3)
+    // Add caixas
+   Flow.addNodeEventDeviceIn();
+   Flow.addGeofence();
+   Flow.addGetContext();
+   Flow.addDeviceOutput();
+   I.wait(3)
 
-//     //conexão
-//     ids = await I.grabAttributeFrom('.nodegroup', 'id');
-//     I.dragAndDrop(locate('.port_output').inside(`#${ids[0]}`), locate('.port_input').inside(`#${ids[1]}`));
-//     I.dragAndDrop(locate('.port_output').inside(`#${ids[1]}`), locate('.port_input').inside(`#${ids[2]}`));
-//     I.dragAndDrop(locate('.port_output').inside(`#${ids[2]}`), locate('.port_input').inside(`#${ids[3]}`));
-//     I.dragAndDrop(locate('.port_output').inside(`#${ids[3]}`), locate('.port_input').inside(`#${ids[4]}`));
+    //conexão
+    ids = await I.grabAttributeFrom('.nodegroup', 'id');
+    I.dragAndDrop(locate('.port_output').inside(`#${ids[0]}`), locate('.port_input').inside(`#${ids[1]}`));
+    I.dragAndDrop(locate('.port_output').inside(`#${ids[1]}`), locate('.port_input').inside(`#${ids[2]}`));
+    I.dragAndDrop(locate('.port_output').inside(`#${ids[2]}`), locate('.port_input').inside(`#${ids[3]}`));
+    I.dragAndDrop(locate('.port_output').inside(`#${ids[3]}`), locate('.port_input').inside(`#${ids[4]}`));
 
-//     Flow.clickOnSave()
-//     Flow.seeFlowHasCreated();
-// })
+    Flow.clickOnSave()
+    Flow.seeFlowHasCreated();
+})
 
 Scenario('@flow: 6° FLOW', async(Flow, I) => {    
     Flow.clickOpen()
